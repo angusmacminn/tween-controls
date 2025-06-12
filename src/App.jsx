@@ -58,7 +58,7 @@ function App() {
     }, {
       width: '100%',
       duration: 5,
-      ease: 'power2.in',
+      ease: 'power2.inOut',
       paused: true,
       timeScale: 1,
     })
