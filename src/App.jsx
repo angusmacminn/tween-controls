@@ -73,7 +73,11 @@ function App() {
   }
   
   const reset = () => {
-    tweenRef.current?.restart()
+    if (tweenRef.current) {
+      tweenRef.current.pause()
+      tweenRef.current.progress(0)
+      tweenRef.current.reversed(false)
+    }
   }
   
   const reverse = () => {
